@@ -98,3 +98,5 @@ group :development, :test do
   gem "rubocop-rails", "~> 2.3"
   gem "rubocop-rspec", "~> 2.0"
 end
+gem 'ruby-vips', '~> 2.1', '>= 2.1.4'
+gem "aws-sdk-s3", require: false
