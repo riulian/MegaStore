@@ -98,5 +98,10 @@ group :development, :test do
   gem "rubocop-rails", "~> 2.3"
   gem "rubocop-rspec", "~> 2.0"
 end
-gem 'ruby-vips', '~> 2.1', '>= 2.1.4'
-gem "aws-sdk-s3", require: false
+group :production do
+  #gem 'pg', '~> 1.4', '>= 1.4.5'
+  gem 'rails_12factor', '~> 0.0.3'
+  gem 'ruby-vips', '~> 2.1', '>= 2.1.4'
+  gem 'mini_magick', '~> 4.11'
+end
+gem "aws-sdk-s3", require: false 

@@ -320,6 +320,11 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.3)
       loofah (~> 2.3)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (7.0.4)
       actionpack (= 7.0.4)
       activesupport (= 7.0.4)
@@ -478,10 +483,12 @@ DEPENDENCIES
   ffaker (~> 2.13)
   importmap-rails
   jbuilder
+  mini_magick (~> 4.11)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4)
   rails-controller-testing (~> 1.0.5)
+  rails_12factor (~> 0.0.3)
   redis (~> 4.0)
   rspec-activemodel-mocks (~> 1.1.0)
   rspec-rails
