@@ -95,7 +95,6 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: store_production
-  username: store
-  password: <%= ENV["STORE_DATABASE_PASSWORD"] %>
+  adapter: postgresql
+  encoding: unicode  
+  url: postgres://store1_production_user:Jwqyyaf1OaAs4EUDXppRlqBx1MDcn9WK@dpg-ce96b3da49916shs40f0-a.oregon-postgres.render.com/store1_production
