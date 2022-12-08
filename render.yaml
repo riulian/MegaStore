@@ -1,0 +1,22 @@
+databases:
+  - name: store1
+    databaseName: store1_production
+    user: iulian
+
+services:
+  - type: web
+    name: store1
+    env: ruby
+    plan: Free   #aici am ales planul Free dar put alege si alte planuri gen Starter care este 7$
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: store1
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+      
+             
+
+        sync: false
